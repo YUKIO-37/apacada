@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A personal e-portfolio showcasing skills, projects, and contact details.">
+  <title>Andrie Pacada | E-Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a class="logo" href="#home">AP<span>.</span></a>
+
+      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="nav-links">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a class="nav-contact" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">Hello, I'm</p>
+        <h1>Andrie Pacada</h1>
+        <h2>BSIT Student</h2>
+        <p class="hero-description">
+          I create thoughtful digital work with clean design and
+          accessible, user-friendly code.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">View my work</a>
+          <a class="button button-outline" href="#contact">Get in touch</a>
+        </div>
+      </div>
+
+      <div class="hero-card" aria-label="Profile card">
+        <div class="profile-shape">AP</div>
+        <p>Curious mind. Creative work.</p>
+      </div>
+    </section>
+
+    <section class="section container" id="about">
+      <p class="eyebrow">About Me</p>
+      <h2 class="section-title">Building useful things.</h2>
+      <p class="section-intro">
+        I'm a BSIT student currently enrolled in the University of the Immaculate Conception.
+        I am currently a first year student with a passion for technology and a drive to learn new
+        things daily.
+      </p>
+      <p class="section-intro">
+        
+      </p>
+    </section>
+
+    <section class="section section-alt" id="skills">
+      <div class="container">
+        <p class="eyebrow">What I work with</p>
+        <h2 class="section-title">Skills</h2>
+        <ul class="skills-list">
+          <li>
+            <span class="skill-name">CSS NCII</span>
+            <div class="skill-bar" role="img" aria-label="CSS, 100 percent">
+              <div class="skill-fill" data-level="100"></div>
+            </div>
+          </li>
+          <li>
+            <span class="skill-name">Independence</span>
+            <div class="skill-bar" role="img" aria-label="JavaScript, 80 percent">
+              <div class="skill-fill" data-level="80"></div>
+            </div>
+          </li>
+          <li>
+            <span class="skill-name">Problem Solving</span>
+            <div class="skill-bar" role="img" aria-label="Problem Solving, 80 percent">
+              <div class="skill-fill" data-level="80"></div>
+            </div>
+          </li>
+          <li>
+            <span class="skill-name">Communication</span>
+            <div class="skill-bar" role="img" aria-label="Communication, 90 percent">
+              <div class="skill-fill" data-level="90"></div>
+            </div>
+          </li>
+          <li>
+            <span class="skill-name">Teamwork</span>
+            <div class="skill-bar" role="img" aria-label="Teamwork, 70 percent">
+              <div class="skill-fill" data-level="70"></div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section container" id="projects">
+      <p class="eyebrow">Selected work</p>
+      <h2 class="section-title">Projects</h2>
+
+      <div class="project-grid">
+        <article class="project-card">
+          <div class="project-art art-one">01</div>
+          <div class="project-content">
+            <p class="project-type">Web Design</p>
+            <h3>Project One</h3>
+            <p>A short description of what you made and the problem it solves.</p>
+            <a href="#" aria-label="View Project One">View project <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-art art-two">02</div>
+          <div class="project-content">
+            <p class="project-type">Development</p>
+            <h3>Project Two</h3>
+            <p>A short description of what you made and the tools you used.</p>
+            <a href="#" aria-label="View Project Two">View project <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-art art-three">03</div>
+          <div class="project-content">
+            <p class="project-type">Case Study</p>
+            <h3>Project Three</h3>
+            <p>A short description of your process, contribution, or results.</p>
+            <a href="#" aria-label="View Project Three">View project <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container contact-inner">
+        <p class="eyebrow">Have a project in mind?</p>
+        <h2 class="section-title">Let's work together.</h2>
+        <p class="contact-intro">
+          I'm open to opportunities, collaborations, and friendly conversations.
+        </p>
+
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" autocomplete="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="button button-primary">Send message</button>
+          <p class="form-status" aria-live="polite"></p>
+        </form>
+
+        <p class="contact-direct">
+          Or email me directly at
+          <a href="mailto:hello@example.com">hello@example.com</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Andrie Pacada</p>
+      <a href="#home">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
