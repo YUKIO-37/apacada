@@ -20,7 +20,8 @@
       </button>
 
       <ul class="nav-links" id="nav-links">
-        <li><a href="#about">About</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#education">Education</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects & achievements">Projects & Achievements</a></li>
         <li><a class="nav-contact" href="#contact">Contact</a></li>
@@ -41,6 +42,37 @@
           <a class="button button-primary" href="#projects">View my work</a>
           <a class="button button-outline" href="#contact">Get in touch</a>
         </div>
+        <div class="hero-socials" aria-label="My socials">
+          <p class="hero-socials-label">My socials</p>
+          <ul>
+            <li>
+              <a href="https://www.facebook.com/Yukinanon/" target="_blank" rel="noopener noreferrer">
+                <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M13.5 21v-8.2h2.8l.4-3.2h-3.2V7.5c0-.9.3-1.5 1.6-1.5h1.7V3.1c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.3H7.3v3.2h2.8V21h3.4Z"/>
+                </svg>
+                Facebook
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/yukinanon_/" target="_blank" rel="noopener noreferrer">
+                <svg class="social-icon social-icon-outline" viewBox="0 0 24 24" aria-hidden="true">
+                  <rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/>
+                  <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/>
+                  <circle cx="17.5" cy="6.5" r="1.25"/>
+                </svg>
+                Instagram
+              </a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/@kion37" target="_blank" rel="noopener noreferrer">
+                <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8ZM9.6 15.6V8.4l6.3 3.6-6.3 3.6Z"/>
+                </svg>
+                YouTube
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
 
       <div class="hero-card" aria-label="Profile card">
@@ -51,7 +83,7 @@
 
     <section class="section container" id="about">
       <p class="eyebrow">About Me</p>
-      <h2 class="section-title">Building useful things.</h2>
+      <h2 class="section-title">Who am I?.</h2>
       <p class="section-intro">
         I'm a BSIT student currently enrolled in the University of the Immaculate Conception.
         I am currently a first year student with a passion for technology and a drive to learn new
@@ -62,13 +94,42 @@
       </p>
     </section>
 
+    <section class="section section-alt" id="education">
+      <div class="container">
+        <p class="eyebrow">Academic background</p>
+        <h2 class="section-title">Education</h2>
+        <div class="education-list">
+          <article class="education-item">
+            <h3>Elementary</h3>
+            <p class="education-years">2014–2020</p>
+            <p class="education-school">Assumption College of Nabunturan</p>
+          </article>
+          <article class="education-item">
+            <h3>Junior High School</h3>
+            <p class="education-years">2020–2024</p>
+            <p class="education-school">Assumption College of Nabunturan</p>
+          </article>
+          <article class="education-item">
+            <h3>Senior High School</h3>
+            <p class="education-years">2024–2026</p>
+            <p class="education-school">Assumption College of Nabunturan<br>TVL-CSS Strand</p>
+          </article>
+          <article class="education-item">
+            <h3>College</h3>
+            <p class="education-years">2026–Present</p>
+            <p class="education-school">Bachelor of Science in Information Technology<br>University of the Immaculate Conception</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <section class="section section-alt" id="skills">
       <div class="container">
         <p class="eyebrow">What I work with</p>
         <h2 class="section-title">Skills</h2>
         <ul class="skills-list">
           <li>
-            <span class="skill-name">CSS NCII</span>
+            <span class="skill-name">Hardware Maintenance</span>
             <div class="skill-bar" role="img" aria-label="CSS, 100 percent">
               <div class="skill-fill" data-level="100"></div>
             </div>
@@ -108,11 +169,13 @@
 
       <div class="project-grid">
         <article class="project-card">
-          <img
-            class="project-image"
-            src="KapayapaanHub%20SS.png"
-            alt="KapayapaanHub welcome screen"
-          >
+          <a class="project-image-link" href="https://kapayapaanhub.netlify.app/" target="_blank" rel="noopener noreferrer" aria-label="Open Kapayapaan Hub project">
+            <img
+              class="project-image"
+              src="KapayapaanHub%20SS.png"
+              alt="KapayapaanHub welcome screen"
+            >
+          </a>
           <div class="project-content">
             <p class="project-type">Grade 12 Capstone</p>
             <h3>Kapayapaan Hub</h3>
@@ -122,26 +185,35 @@
         </article>
 
         <article class="project-card">
-          <img
-            class="project-image"
-            src="Olympics.jpg"
-            alt="Provincial Skills Olympics network infrastructure event"
-          >
+          <a class="project-image-link" href="https://www.facebook.com/share/p/19rTazd6QG/" target="_blank" rel="noopener noreferrer" aria-label="Open Provincial Skills Olympics post">
+            <img
+              class="project-image"
+              src="Olympics.jpg"
+              alt="Provincial Skills Olympics network infrastructure event"
+            >
+          </a>
           <div class="project-content">
             <p class="project-type">Provincial Skills Olympics</p>
             <h3>Network Infrastructure</h3>
-            <p>A short description of what you made and the tools you used.</p>
-            <a href="https://www.facebook.com/share/p/19rTazd6QG/" target="_blank" rel="noopener noreferrer" aria-label="View Post">View project <span aria-hidden="true">↗</span></a>
+            <p>Third Place for the TESDA Hosted Provincial Skills Olympics in Davao De Oro
+              Network Infrastructure competition.</p>
+            <a href="https://www.facebook.com/share/p/19rTazd6QG/" target="_blank" rel="noopener noreferrer" aria-label="View Olympics post">View post <span aria-hidden="true">↗</span></a>
           </div>
         </article>
 
         <article class="project-card">
-          <div class="project-art art-three">03</div>
+          <a class="project-image-link" href="https://www.facebook.com/photo.php?fbid=1082517681604234&amp;set=a.112344685288210&amp;type=3" target="_blank" rel="noopener noreferrer" aria-label="Open CSS NCII Facebook post">
+            <img
+              class="project-image"
+              src="NCII.jpg"
+              alt="CSS NCII certificate"
+            >
+          </a>
           <div class="project-content">
-            <p class="project-type">Case Study</p>
-            <h3>Project Three</h3>
-            <p>A short description of your process, contribution, or results.</p>
-            <a href="#" aria-label="View Project Three">View project <span aria-hidden="true">↗</span></a>
+            <p class="project-type">NCII Passer (CSS) </p>
+            <h3>NCII CSS Certified</h3>
+            <p>NCII Passer and Certified for Computer System Servicing.</p>
+            <a href="https://www.facebook.com/photo.php?fbid=1082517681604234&amp;set=a.112344685288210&amp;type=3" target="_blank" rel="noopener noreferrer" aria-label="View NCII Facebook post">View post <span aria-hidden="true">↗</span></a>
           </div>
         </article>
       </div>
@@ -149,7 +221,7 @@
 
     <section class="section contact-section" id="contact">
       <div class="container contact-inner">
-        <p class="eyebrow">Have a something in mind?</p>
+        <p class="eyebrow">Have something in mind?</p>
         <h2 class="section-title">Let's work together.</h2>
         <p class="contact-intro">
           I'm open to opportunities, collaborations, and friendly conversations.
